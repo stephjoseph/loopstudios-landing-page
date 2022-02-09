@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="../dist/style.css" />
+
+    <title>Frontend Mentor | Loopstudios landing page</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+  <body class="flex flex-col items-center font-['Alata']">
+    <nav
+      id="mobile-nav"
+      class="ease fixed top-0 left-0 z-50 flex h-full w-full translate-x-[100%] flex-col gap-[9.938rem] bg-black px-[1.5rem] pt-10 transition-[transform,_padding] duration-500 xl:hidden"
+    >
+      <div class="flex items-center justify-between">
+        <a class="h-6 w-36" href="#" aria-label="loopstudios home">
+          <img
+            class="h-6 w-36"
+            src="../images/logo.svg"
+            alt="loopstudios logo"
+          />
+        </a>
+        <button
+          id="menu-close-button"
+          class="scale-0 transition-transform duration-500 ease-in"
+          aria-label="mobile close nav button"
+        >
+          <img src="../images/icon-close.svg" alt="" />
+        </button>
+      </div>
+      <ul class="flex flex-col gap-6">
+        <li>
+          <a
+            class="font-['Josefin_Sans'] text-[1.5rem] font-light uppercase leading-[1.563rem] tracking-normal text-white"
+            href="#"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            class="font-['Josefin_Sans'] text-[1.5rem] font-light uppercase leading-[1.563rem] tracking-normal text-white"
+            href="#"
+            >Careers</a
+          >
+        </li>
+        <li>
+          <a
+            class="font-['Josefin_Sans'] text-[1.5rem] font-light uppercase leading-[1.563rem] tracking-normal text-white"
+            href="#"
+            >Events</a
+          >
+        </li>
+        <li>
+          <a
+            class="font-['Josefin_Sans'] text-[1.5rem] font-light uppercase leading-[1.563rem] tracking-normal text-white"
+            href="#"
+            >Products</a
+          >
+        </li>
+        <li>
+          <a
+            class="font-['Josefin_Sans'] text-[1.5rem] font-light uppercase leading-[1.563rem] tracking-normal text-white"
+            href="#"
+            >Support</a
+          >
+        </li>
+      </ul>
+    </nav>
+    <header
+      class="mb-[6rem] flex h-[40.625rem] w-full flex-col items-center bg-[url('../images/mobile/image-hero.jpg')] bg-cover bg-center bg-no-repeat px-6 pt-[14.188rem] xl:mb-[10rem] xl:items-start xl:bg-[url('../images/desktop/image-hero.jpg')] xl:px-[10.313rem] xl:pt-16"
+    >
+      <div
+        id="mobile-navbar"
+        class="fixed top-0 left-0 z-40 mb-[10.188rem] flex w-full items-center justify-between px-6 py-10 transition-[background,_padding] duration-300 ease-in xl:hidden"
+      >
+        <a
+          class="h-6 w-36 xl:h-8 xl:w-[12rem]"
+          href="#"
+          aria-label="loopstudios home"
+        >
+          <img src="../images/logo.svg" alt="loopstudios logo" />
+        </a>
+        <button
+          id="menu-open-button"
+          class="scale-100 transition-transform duration-300 ease-in"
+          aria-label="mobile nav button"
+        >
+          <img src="../images/icon-hamburger.svg" alt="" />
+        </button>
+      </div>
+
+      <div
+        class="mb-[7.688rem] hidden w-full items-center justify-between xl:flex"
+      >
+        <a href="" class="h-8 w-[12rem]">
+          <img src="../images/logo.svg" alt="" />
+        </a>
+        <nav>
+          <ul class="flex items-center gap-8">
+            <li>
+              <a
+                class="group relative flex items-center justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href=""
+                >About
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href=""
+                >Careers
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href=""
+                >Events
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href=""
+                >Products
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href=""
+                >Support
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div
+        class="flex h-[12.25rem] w-[20.438rem] items-center border-2 border-solid border-white px-6 py-[1.625rem] xl:h-[17.375rem] xl:w-[40.625rem] xl:p-10"
+      >
+        <h1
+          class="text-[2.5rem] font-light uppercase leading-[2.375rem] tracking-normal text-white xl:text-[4.5rem] xl:leading-[4.375rem]"
+        >
+          Immersive experiences that deliver
+        </h1>
+      </div>
+    </header>
+    <main
+      class="mx-auto mb-[6rem] flex w-[20.438rem] flex-col gap-[6rem] xl:w-[69.625rem] xl:gap-[11.5rem]"
+    >
+      <section
+        class="flex w-full flex-col items-center gap-12 xl:h-[31.25rem] xl:flex-row xl:items-end xl:gap-0"
+      >
+        <div class="xl:w-[45.688rem]">
+          <img
+            class="xl:hidden"
+            src="../images/mobile/image-interactive.jpg"
+            alt="person using VR"
+          />
+          <img
+            class="hidden xl:block"
+            src="../images/desktop/image-interactive.jpg"
+            alt="person using VR"
+          />
+        </div>
+        <div
+          class="mx-6 flex flex-col items-center gap-4 text-center xl:mx-0 xl:-ml-[10.063rem] xl:h-[19.813rem] xl:w-[33.813rem] xl:gap-[1.563rem] xl:bg-white xl:pl-24 xl:pt-24 xl:text-left"
+        >
+          <h2
+            class="text-[2rem] font-light uppercase leading-8 tracking-normal text-black xl:text-[3rem] xl:leading-[3rem]"
+          >
+            The leader in interactive VR
+          </h2>
+          <p
+            class="text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-black/50"
+          >
+            Founded in 2011, Loopstudios has been producing world-class virtual
+            reality projects for some of the best companies around the globe.
+            Our award-winning creations have transformed businesses through
+            digital experiences that bind to their brand.
+          </p>
+        </div>
+      </section>
+      <section class="flex w-full flex-col items-center">
+        <div
+          class="mb-12 xl:mb-[5rem] xl:flex xl:w-full xl:items-center xl:justify-between"
+        >
+          <h2
+            class="text-[2rem] font-light uppercase leading-8 tracking-normal text-black xl:text-[3rem] xl:leading-[3rem]"
+          >
+            Our creations
+          </h2>
+          <a
+            class="hidden border border-solid border-black bg-transparent px-[2.375rem] py-[0.813rem] text-[0.875rem] font-normal uppercase leading-[0.875rem] tracking-[5px] text-black hover:bg-black hover:text-white active:bg-black active:text-white xl:block"
+            href="#"
+            aria-label="see all"
+            >See all</a
+          >
+        </div>
+
+        <div
+          class="mb-[2.125rem] grid w-full grid-cols-1 gap-6 xl:grid-cols-4 xl:grid-rows-2 xl:gap-[1.875rem]"
+        >
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-deep-earth.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[14.188rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-deep-earth.jpg')] xl:pb-8 xl:pr-[6.875rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              Deep earth
+            </h3>
+          </div>
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-night-arcade.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[13rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-night-arcade.jpg')] xl:pb-8 xl:pr-[5.25rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              Night arcade
+            </h3>
+          </div>
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-soccer-team.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[12.438rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-soccer-team.jpg')] xl:pb-8 xl:pr-[4.5rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              Soccer team VR
+            </h3>
+          </div>
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-grid.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[15.563rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-grid.jpg')] xl:pb-8 xl:pr-[8.688rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              The grid
+            </h3>
+          </div>
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-from-above.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[11.5rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-from-above.jpg')] xl:pb-8 xl:pr-[3.25rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              From up above VR
+            </h3>
+          </div>
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-pocket-borealis.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[11.813rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-pocket-borealis.jpg')] xl:pb-8 xl:pr-[3.688rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              Pocket borealis
+            </h3>
+          </div>
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-curiosity.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[11.25rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-curiosity.jpg')] xl:pb-8 xl:pr-[2.938rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              The curiosity
+            </h3>
+          </div>
+          <div
+            class="group relative z-0 h-[7.5rem] w-full cursor-pointer bg-[url('../images/mobile/image-fisheye.jpg')] bg-cover bg-center bg-no-repeat pl-[1.25rem] pr-[13rem] pb-[1.25rem] pt-[3.25rem] xl:h-[28.125rem] xl:bg-[url('../images/desktop/image-fisheye.jpg')] xl:pb-8 xl:pr-[5.25rem] xl:pt-[22.125rem] xl:pl-[2.5rem]"
+          >
+            <div
+              class="absolute left-0 top-0 z-10 hidden h-full w-full bg-white/75 group-hover:block group-active:block"
+            ></div>
+            <h3
+              class="relative z-20 text-2xl uppercase leading-6 tracking-normal text-white group-hover:text-black group-active:text-black xl:text-[2rem] xl:leading-8"
+            >
+              Make it fisheye
+            </h3>
+          </div>
+        </div>
+        <a
+          class="border border-solid border-black bg-transparent px-[2.375rem] py-[0.813rem] text-[0.875rem] font-normal uppercase leading-[0.875rem] tracking-[5px] text-black hover:bg-black hover:text-white active:bg-black active:text-white xl:hidden"
+          href="#"
+          aria-label="see all"
+          >See all</a
+        >
+      </section>
+    </main>
+    <footer
+      class="flex w-full flex-col items-center gap-12 bg-black px-[3.24rem] py-14 text-center xl:flex-row xl:justify-between xl:px-[10.313rem] xl:pb-[2.688rem] xl:pt-[2.75rem]"
+    >
+      <div class="flex flex-col items-center gap-8 xl:items-start xl:gap-6">
+        <a class="h-6 w-36" href="#" aria-label="loopstudios home">
+          <img src="../images/logo.svg" alt="loopstudios logo" />
+        </a>
+        <nav id="footer-nav">
+          <ul class="flex flex-col items-center gap-4 xl:flex-row xl:gap-8">
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href="#"
+                >About
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href="#"
+                >Careers
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href="#"
+                >Events
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href="#"
+                >Products
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+              /></a>
+            </li>
+            <li>
+              <a
+                class="group relative flex justify-center text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white"
+                href="#"
+                >Support
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible" />
+                <hr
+                  class="invisible absolute -bottom-[0.25rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+              /></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="flex flex-col items-center gap-4 xl:items-end xl:gap-6">
+        <div class="flex items-center gap-4" id="social-links">
+          <a class="group relative" href="#" aria-label="Facebook">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.73 0 1.323-.593 1.323-1.325V1.325C24 .593 23.407 0 22.675 0z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <hr
+              class="invisible absolute bottom-[-0.5rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+            />
+          </a>
+          <a class="group relative" href="#" aria-label="Twitter">
+            <svg width="24" height="20" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 2.557a9.83 9.83 0 01-2.828.775A4.932 4.932 0 0023.337.608a9.864 9.864 0 01-3.127 1.195A4.916 4.916 0 0016.616.248c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 1.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 17.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 2.557z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <hr
+              class="invisible absolute bottom-[-0.5rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+            />
+          </a>
+          <a class="group relative" href="#" aria-label="Pinterest">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 0C5.373 0 0 5.372 0 12c0 5.084 3.163 9.426 7.627 11.174-.105-.949-.2-2.405.042-3.441.218-.937 1.407-5.965 1.407-5.965s-.359-.719-.359-1.782c0-1.668.967-2.914 2.171-2.914 1.023 0 1.518.769 1.518 1.69 0 1.029-.655 2.568-.994 3.995-.283 1.194.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738a.36.36 0 01.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12 24c6.627 0 12-5.373 12-12 0-6.628-5.373-12-12-12z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <hr
+              class="invisible absolute bottom-[-0.5rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+            />
+          </a>
+          <a class="group relative" href="#" aria-label="Instagram">
+            <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"
+                fill="#FFF"
+                fill-rule="nonzero"
+              />
+            </svg>
+            <hr
+              class="invisible absolute bottom-[-0.5rem] h-[0.125rem] w-6 group-hover:visible group-active:visible"
+            />
+          </a>
+        </div>
+        <p
+          class="text-[0.938rem] font-normal leading-[1.563rem] tracking-normal text-white/50"
+        >
+          © 2021 Loopstudios. All rights reserved.
+        </p>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
